@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CookiesTest</title>
+  <title><%= cookies[:name] || "Hello!" %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<div>
+  <p>
+    <%= link_to "Home page", root_path %>
+    |
+    <%= link_to "Test page", test_page_path %>
+  </p>
+</div>
 
 <%= yield %>
 
