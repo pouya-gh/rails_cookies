@@ -1,0 +1,5 @@
+<%= form_tag set_name_path, method: :get do %>
+  <%= label_tag :name, "Your name: " %>
+  <%= text_field_tag :name %>
+  <%= submit_tag "Submit" %>
+<% end %>
