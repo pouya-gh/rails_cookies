@@ -4,7 +4,7 @@ class ExamplesController < ApplicationController
   end
 
   def set_name
-    cookies[:name] = params[:name]
+    cookies.permanent[:name] = params[:name]
     render :index
   end
 
